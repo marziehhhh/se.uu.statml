@@ -16,3 +16,13 @@ print(f"cross val scores: {scores}, test score: {LR.score(X_test, y_test)}")
 
 **KNEIGHBORS**
 
+KNN = KNeighborsClassifier()
+
+KNN.fit(X_train, y_train.values.ravel())
+
+scores = cross_val_score(KNN, X_train, y_train.values.ravel(), cv=2)
+
+print(f"cross val scores: {scores}, test score: {KNN.score(X_test, y_test)}")
+
+**_cross val scores: [0.75       0.75482094], test score: 0.8076923076923077_**
+
