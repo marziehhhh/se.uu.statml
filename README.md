@@ -14,6 +14,8 @@ print(f"cross val scores: {scores}, test score: {LR.score(X_test, y_test)}")
 
 **_cross val scores: [0.8543956  0.83471074], test score: 0.8846153846153846_**
 
+<===============================================================================>
+
 **KNEIGHBORS**
 
 KNN = KNeighborsClassifier()
