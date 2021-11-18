@@ -42,5 +42,20 @@ print(f"cross val scores: {scores}, test score: {lda.score(X_test, y_test)}")
 
 **_cross val scores: [0.84246575 0.84931507 0.85517241 0.8        0.86206897], test score: 0.8782051282051282_**
 
+<===============================================================================>
+
+**QDA**
+
+qda = QuadraticDiscriminantAnalysis()
+
+qda.fit(X_train, y_train)
+
+scores = cross_val_score(qda, X_train, np.array(y_train), cv=5)
+
+print(f"cross val scores: {scores}, test score: {qda.score(X_test, y_test)}")
+
+**_cross val scores: [0.89726027 0.82191781 0.85517241 0.84827586 0.89655172], test score: 0.7596153846153846_**
+
+<===============================================================================>
 
 
