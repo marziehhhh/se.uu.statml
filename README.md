@@ -12,4 +12,4 @@ scores = cross_val_score(LR, X_train, y_train.values.ravel(), cv=2)
 
 print(f"cross val scores: {scores}, test score: {LR.score(X_test, y_test)}")
 
-cross val scores: [0.8543956  0.83471074], test score: 0.8846153846153846
+_cross val scores: [0.8543956  0.83471074], test score: 0.8846153846153846_
