@@ -3,6 +3,7 @@
 A comparison between the outputs of following regressions
 
 **Logistic Regression**
+
 LR = LogisticRegression(max_iter=10000)
 
 LR.fit(X_train, y_train.values.ravel())
