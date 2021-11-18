@@ -28,3 +28,7 @@ print(f"cross val scores: {scores}, test score: {KNN.score(X_test, y_test)}")
 
 **_cross val scores: [0.75       0.75482094], test score: 0.8076923076923077_**
 
+<===============================================================================>
+
+
+
