@@ -30,5 +30,17 @@ print(f"cross val scores: {scores}, test score: {KNN.score(X_test, y_test)}")
 
 <===============================================================================>
 
+**LDA**
+
+lda = LinearDiscriminantAnalysis()
+
+lda.fit(X_train, y_train.values.ravel())
+
+scores = cross_val_score(lda, X_train, y_train.values.ravel(), cv=5)
+
+print(f"cross val scores: {scores}, test score: {lda.score(X_test, y_test)}")
+
+**_cross val scores: [0.84246575 0.84931507 0.85517241 0.8        0.86206897], test score: 0.8782051282051282_**
+
 
 
